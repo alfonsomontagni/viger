@@ -1,6 +1,6 @@
 {
   "name": "viger",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -81,4 +81,3 @@
     "typescript": "~4.9.4"
   }
 }
-
