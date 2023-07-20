@@ -1,2 +1,1 @@
-# viger
-angular react
+ng new viger --create-application=false 
