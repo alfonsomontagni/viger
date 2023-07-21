@@ -11,3 +11,4 @@ ng s --project=withreact001 --o
     ng s --project=withreact --o  ok
 
     ng g application withreact002 --style=scss --routing=true 
+    ng g c components/view-with-r01 --project=withreact002 
