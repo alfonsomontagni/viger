@@ -8,6 +8,10 @@ export default function MyReact(props) {
           <b style={{fontSize: '24px'}}>Hello</b>
         </button> "{props.name}"!
       </h2>
+      <div>
+      <h2>{props.name2} </h2>
+      </div>
     </div>
+    
   );
 }
