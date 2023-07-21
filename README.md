@@ -9,3 +9,5 @@ ng s --project=withreact001 --o
     "strict": false,
 
     ng s --project=withreact --o  ok
+
+    ng g application withreact002 --style=scss --routing=true 
