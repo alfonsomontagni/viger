@@ -12,7 +12,7 @@ export class ViewWithRComponent {
   msg = '';
   myProps: ComponentProps<typeof MyReact> = {
     name: 'My React Component',
-    name2:'test 2',
+    name2:'test 3a',
     onClick: _ => this.msg = 'React Button Clicked'
   }
 
