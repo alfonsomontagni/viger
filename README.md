@@ -21,3 +21,7 @@ ng s --project=withreact001 --o
 npm i axios
 
 npm install --save-dev @types/react @types/react-dom
+withreact002 scss in css
+npx tailwindcss init -p
+
+in vscode nei setting mettere unkown rule a ignore invece che warning

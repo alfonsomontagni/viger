@@ -5,7 +5,7 @@ import Lezione_1_22 from '../../react/Lezione_1_22';
 @Component({
   selector: 'app-view-lezione-c1s22',
   templateUrl: './view-lezione-c1s22.component.html',
-  styleUrls: ['./view-lezione-c1s22.component.scss']
+  styleUrls: ['./view-lezione-c1s22.component.css']
 })
 export class ViewLezioneC1s22Component {
   Lezione_1_22 = Lezione_1_22;

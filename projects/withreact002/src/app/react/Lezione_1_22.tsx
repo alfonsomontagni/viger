@@ -20,14 +20,17 @@ function Lezione_1_22() {
 
   return (
     <>
-      {
+    <div className="m-4">
+    {
         users.map(user => {
           return (
             <li key={user.id}>{user.name}</li>
           )
         })
       }
-      <button onClick={addUser}>Add</button>
+      <button className="btn btn-success" onClick={addUser}>Add</button>
+    </div>
+      
     </>
   )
 }
