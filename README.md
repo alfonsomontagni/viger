@@ -18,3 +18,4 @@ ng s --project=withreact001 --o
     ng g c components/view-lezione-c1s11  --project=withreact002 
      ng g c components/view-lezione-c1s12  --project=withreact002 
 
+npm i axios
