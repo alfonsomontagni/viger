@@ -11,6 +11,10 @@ export class NgReactComponent<Comp extends ElementType> {
   @Input() component: Comp;
   @Input() props: ComponentProps<Comp>;
   private root = createRoot(inject(ElementRef).nativeElement);
+  
+  ngOnInit() {
+    console.log("INIT props", this.props)
+  }
 
   ngOnChanges() { 
     this.root.render(createElement(this.component, this.props));
