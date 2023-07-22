@@ -14,6 +14,9 @@ export default function MyReact(props:any) {
       <div>
         <div className="m-2 tw-text-4xl tw-bg-red-500">Hello Tailwind com m-2 bootstrap</div>
       </div>
+      <div className="title">
+        <div >Hel</div>
+      </div>
     </div>
     
   );
