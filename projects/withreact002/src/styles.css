@@ -2,3 +2,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+    font-family: 'Raleway', sans-serif;
+    @apply tw-bg-gradient-to-tl tw-from-slate-900 tw-to-blue-500 tw-text-white tw-bg-fixed  tw-h-full;
+}
+
+.title {
+    @apply tw-font-extrabold tw-my-3 tw-text-white tw-text-[2rem] tw-text-center
+     2xl:tw-text-[18rem] 
+      2xl:tw-fixed 
+      2xl:tw-bottom-0 
+      2xl:tw-z-0   
+      2xl:tw-rotate-[270deg] 
+      2xl:tw-w-96  
+      2xl:tw--left-12  
+      2xl:tw-opacity-30 
+      2xl:tw-pointer-events-none
+  }
