@@ -10,6 +10,7 @@ import { ViewLezioneC1s11Component } from './components/view-lezione-c1s11/view-
 import { ViewLezioneC1s12Component } from './components/view-lezione-c1s12/view-lezione-c1s12.component';
 import { ViewLezioneC1s13Component } from './components/view-lezione-c1s13/view-lezione-c1s13.component';
 import { ViewLezioneC1s13aComponent } from './components/view-lezione-c1s13a/view-lezione-c1s13a.component';
+import { ViewLezioneC1s14Component } from './components/view-lezione-c1s14/view-lezione-c1s14.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ViewLezioneC1s13aComponent } from './components/view-lezione-c1s13a/vie
     ViewLezioneC1s11Component,
     ViewLezioneC1s12Component,
     ViewLezioneC1s13Component,
-    ViewLezioneC1s13aComponent
+    ViewLezioneC1s13aComponent,
+    ViewLezioneC1s14Component
   ],
   imports: [
     BrowserModule,
