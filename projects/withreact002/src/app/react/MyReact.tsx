@@ -1,5 +1,5 @@
 import * as React from "react";
-export default function MyReact(props) {
+export default function MyReact(props:any) {
   return (
     <div>
       <h2 style={{border: '1px solid #CCC', padding: '12px'}}>
