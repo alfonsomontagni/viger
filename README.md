@@ -19,3 +19,5 @@ ng s --project=withreact001 --o
      ng g c components/view-lezione-c1s12  --project=withreact002 
 
 npm i axios
+
+npm install --save-dev @types/react @types/react-dom
