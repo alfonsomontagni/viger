@@ -9,7 +9,7 @@ function Lezione_1_13aa() {
   
     return (
       <>
-      { totalProducts ? <Total valuer={totalProducts} /> : <Empty />}
+      { totalProducts > 0 ? <Total valuer={totalProducts} /> : <Empty />}
       </>
     )
   }
