@@ -12,7 +12,7 @@ export default function MyReact(props:any) {
       <h2>{props.name2} </h2>
       </div>
       <div>
-        <div className="tw-m-4 tw-text-4xl tw-bg-red-500">Hello Tailwind</div>
+        <div className="m-2 tw-text-4xl tw-bg-red-500">Hello Tailwind com m-2 bootstrap</div>
       </div>
     </div>
     
