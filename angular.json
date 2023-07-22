@@ -203,7 +203,7 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "css"
         }
       },
       "root": "projects/withreact002",
@@ -220,13 +220,14 @@
               "zone.js"
             ],
             "tsConfig": "projects/withreact002/tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
+            "inlineStyleLanguage": "css",
             "assets": [
               "projects/withreact002/src/favicon.ico",
               "projects/withreact002/src/assets"
             ],
             "styles": [
-              "projects/withreact002/src/styles.scss"
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "projects/withreact002/src/styles.css"
             ],
             "scripts": []
           },
@@ -283,13 +284,13 @@
               "zone.js/testing"
             ],
             "tsConfig": "projects/withreact002/tsconfig.spec.json",
-            "inlineStyleLanguage": "scss",
+            "inlineStyleLanguage": "css",
             "assets": [
               "projects/withreact002/src/favicon.ico",
               "projects/withreact002/src/assets"
             ],
             "styles": [
-              "projects/withreact002/src/styles.scss"
+              "projects/withreact002/src/styles.css"
             ],
             "scripts": []
           }

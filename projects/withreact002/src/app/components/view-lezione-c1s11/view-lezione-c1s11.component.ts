@@ -5,7 +5,7 @@ import type { ComponentProps } from "react";
 @Component({
   selector: 'app-view-lezione-c1s11',
   templateUrl: './view-lezione-c1s11.component.html',
-  styleUrls: ['./view-lezione-c1s11.component.scss']
+  styleUrls: ['./view-lezione-c1s11.component.css']
 })
 export class ViewLezioneC1s11Component {
   Lezione_1_11 = Lezione_1_11;
