@@ -11,3 +11,10 @@ ng s --project=withreact001 --o
     ng s --project=withreact --o  ok
 
     ng g application withreact002 --style=scss --routing=true 
+    ng g c components/view-with-r01 --project=withreact002 
+
+   //other dir:  create react with vite npm create vite@latest
+
+    ng g c components/view-lezione-c1s11  --project=withreact002 
+     ng g c components/view-lezione-c1s12  --project=withreact002 
+
