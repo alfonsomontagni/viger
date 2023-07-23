@@ -25,3 +25,6 @@ withreact002 scss in css
 npx tailwindcss init -p
 
 in vscode nei setting mettere unkown rule a ignore invece che warning
+
+npm i react-router-dom@6 history@5
+npm i history
