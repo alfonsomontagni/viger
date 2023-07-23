@@ -2,6 +2,8 @@ import * as React from "react";
 import { User } from "./model/user";
 //import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { Empty } from "./components-react/Empty";
 
 function Lezione_1_22() {
   const [users, setUsers] = React.useState<User[]>([]);
@@ -17,6 +19,9 @@ function Lezione_1_22() {
     })
       .then(res => setUsers(s => [...s, res.data]))
   }
+  function clic() {
+     console.log("clic")
+  }
 
   return (
     <>
@@ -29,8 +34,19 @@ function Lezione_1_22() {
         })
       }
       <button className="btn btn-success" onClick={addUser}>Add</button>
-    </div>
+      <br />
+      <button className="mt-2 btn btn-primary" onClick={clic}>Click Me</button>
+     
+    
       
+    </div>
+    <BrowserRouter>
+        <div className="page-mia"> 
+        <Routes>
+           QUI <Route path="empty" element={<Empty />} />
+       </Routes>
+       </div>
+        </BrowserRouter>
     </>
   )
 }
