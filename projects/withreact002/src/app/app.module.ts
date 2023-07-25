@@ -17,11 +17,14 @@ import { ViewLezioneC1s19Component } from './components/view-lezione-c1s19/view-
 import { ViewLezioneC1s22Component } from './components/view-lezione-c1s22/view-lezione-c1s22.component';
 import { ViewAppbase01Component } from './components/view-appbase01/view-appbase01.component';
 import { ViewAppbase02routingComponent } from './components/view-appbase02routing/view-appbase02routing.component';
+import { NgReactF01Component } from './react/ng-react/ng-react-f01.component';
+import { ViewAppbase03Component } from './components/view-appbase03/view-appbase03.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NgReactComponent,
+    NgReactF01Component,
     ViewWithRComponent,
     ViewWithR01Component,
     ViewLezioneC1s11Component,
@@ -34,7 +37,8 @@ import { ViewAppbase02routingComponent } from './components/view-appbase02routin
     ViewLezioneC1s19Component,
     ViewLezioneC1s22Component,
     ViewAppbase01Component,
-    ViewAppbase02routingComponent
+    ViewAppbase02routingComponent,
+    ViewAppbase03Component
   ],
   imports: [
     BrowserModule,
