@@ -28,3 +28,7 @@ in vscode nei setting mettere unkown rule a ignore invece che warning
 
 npm i react-router-dom@6 history@5
 npm i history
+
+npm i @heartexlabs/label-studio@1.4.0
+npm i label-studio
+npm i --save-dev @types/label-studio
