@@ -32,3 +32,5 @@ npm i history
 npm i @heartexlabs/label-studio@1.4.0
 npm i label-studio
 npm i --save-dev @types/label-studio
+
+ng g application orso --style=css --routing=true 
