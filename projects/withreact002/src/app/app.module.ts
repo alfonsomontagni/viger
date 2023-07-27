@@ -19,7 +19,12 @@ import { ViewAppbase01Component } from './components/view-appbase01/view-appbase
 import { ViewAppbase02routingComponent } from './components/view-appbase02routing/view-appbase02routing.component';
 import { NgReactF01Component } from './react/ng-react/ng-react-f01.component';
 import { ViewAppbase03Component } from './components/view-appbase03/view-appbase03.component';
-
+import { NavBarComponent } from './core/nav-bar/nav-bar.component';
+import { N12Component } from './lections/n12/n12.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,11 +43,18 @@ import { ViewAppbase03Component } from './components/view-appbase03/view-appbase
     ViewLezioneC1s22Component,
     ViewAppbase01Component,
     ViewAppbase02routingComponent,
-    ViewAppbase03Component
+    ViewAppbase03Component,
+    NavBarComponent,
+    N12Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

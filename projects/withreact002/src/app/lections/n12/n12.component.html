@@ -1,0 +1,7 @@
+<p>n12 works!</p>
+<mat-form-field>
+    <mat-label>Username</mat-label>
+    <input matInput (input)="onInput($event)">
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="onClick($event)">Gioca</button>
+<ng-template *ngIf="isVisible"; then bloccoIf else bloccoElse;></ng-template>
