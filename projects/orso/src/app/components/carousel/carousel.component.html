@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+<ngb-carousel>
+    <ng-template ngbSlide *ngFor="let image of images">
+        <div class="carousel-wrapper">
+            <img src="../../../assets/majorarcana/base/{{image.name}}" [alt]="image.caption">
+
+            <div class="caption">{{image.caption}}</div>
+        </div>
+
+    </ng-template>
+</ngb-carousel>
+</div>
+</div>

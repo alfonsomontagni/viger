@@ -34,3 +34,9 @@ npm i label-studio
 npm i --save-dev @types/label-studio
 
 ng g application orso --style=css --routing=true 
+//ng add @ng-bootstrap/ng-bootstrap --project myProject
+npm i @ng-bootstrap/ng-bootstrap@11.0.0
+ng g c components/carousel  --project=orso 
+npm install @angular/localize --save
+npm i core-js
+npm i angular-responsive-carousel //no non c'è ivy
