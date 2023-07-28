@@ -1,0 +1,21 @@
+.carousel-wrapper{
+    max-width: 350px; max-height: 489px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.caption{
+    position: absolute;
+    left: 35px;
+    bottom: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+.captionunder{
+
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}

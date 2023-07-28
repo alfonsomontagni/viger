@@ -310,15 +310,14 @@
             "outputPath": "dist/orso",
             "index": "projects/orso/src/index.html",
             "main": "projects/orso/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": "projects/orso/src/polyfills.ts",
             "tsConfig": "projects/orso/tsconfig.app.json",
             "assets": [
               "projects/orso/src/favicon.ico",
               "projects/orso/src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "projects/orso/src/styles.css"
             ],
             "scripts": []
