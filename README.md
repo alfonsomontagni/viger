@@ -40,3 +40,6 @@ ng g c components/carousel  --project=orso
 npm install @angular/localize --save
 npm i core-js
 npm i angular-responsive-carousel //no non c'è ivy
+
+npm install @scullyio/init @scullyio/ng-lib @scullyio/scully @scullyio/scully-plugin-puppeteer --force
+ng g application scully --style=scss --routing=true 
