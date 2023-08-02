@@ -43,3 +43,33 @@ npm i angular-responsive-carousel //no non c'è ivy
 
 npm install @scullyio/init @scullyio/ng-lib @scullyio/scully @scullyio/scully-plugin-puppeteer --force
 ng g application scully --style=scss --routing=true 
+npm install bootstrap   --prefix bootstrap5
+// no lascio la 4bootstrap@5.3.1 requires a peer of @popperjs/core@^2.11.8 but none is installed. You must install peer dependencies yourself
+//*no npm i @popperjs/core
+
+ng generate module core --project=scully --dry-run
+ng generate component core/header --project=scully --module=core --export   --dry-run
+
+ng generate module shared --project=scully
+ng generate component shared/footer --project=scully --module=shared --export
+
+ng s --project=scully --o 
+
+ng generate module contact --project=scully
+ng generate component contact/contact --project=scully --module=contact --export --flat --dry-run
+
+import { RouterModule } from '@angular/router';
+ in core module
+
+ ng generate module articles --route=articles --module=app-routing --project=scully --dry-run (genera anche il comp)
+
+
+ ng generate @scullyio/init:markdown --project=scully my-blog --dry-run
+
+ ng g application trak --style=css --routing=true 
+ npm install @cds/core @clr/angular @clr/ui --save
+ng generate service services/issues --project=trak --dry-run
+ng generate interface models/issue --project=trak --dry-run
+ng generate component components/issue-list --project=trak
+
+ git log --graph --decorate --abbrev-commit --all --pretty=oneline
