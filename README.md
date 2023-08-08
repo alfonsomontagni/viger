@@ -73,3 +73,9 @@ ng generate interface models/issue --project=trak --dry-run
 ng generate component components/issue-list --project=trak
 
  git log --graph --decorate --abbrev-commit --all --pretty=oneline
+
+Angular Material schematics
+ ng generate @angular/material:table table-prova --project=trak --dry-run 
+  ng s --project=trak --o 
+
+  ng g application materia --style=css --routing=true 
