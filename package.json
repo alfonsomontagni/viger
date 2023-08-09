@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "parolem": "ng serve --project=parolemagiche001 -o",
-    "server-parolem-001": "json-server --watch projects/parolemagiche001/server/db.json"
+    "server-parolem-001": "json-server --watch projects/parolemagiche001/server/db.json",
+    "materias": "ng serve  --project=materiascss --port=5000 --o"
   },
   "private": true,
   "dependencies": {

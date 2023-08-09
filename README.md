@@ -79,3 +79,75 @@ Angular Material schematics
   ng s --project=trak --o 
 
   ng g application materia --style=css --routing=true 
+
+  abilitato menu npm scripts di VScode (in explorer i ...)
+    ng g application materiascss --style=scss --routing=true 
+    "materias": "ng serve  --project=materiascss --port=5000 --o"
+estensione angular evergreen --> on modifico per ora !
+[====================] 81/81 100%
+
+ @angular-devkit/build-angular        ^15.1.4  →    ^16.1.8
+ @angular/animations                  ^15.1.0  →    ^16.1.8
+ @angular/cdk                         ^15.2.2  →    ^16.1.7
+ @angular/cli                         ~15.1.4  →    ~16.1.8
+ @angular/common                      ^15.1.0  →    ^16.1.8
+ @angular/compiler                    ^15.1.0  →    ^16.1.8
+ @angular/compiler-cli                ^15.1.0  →    ^16.1.8
+ @angular/core                        ^15.1.0  →    ^16.1.8
+ @angular/forms                       ^15.1.0  →    ^16.1.8
+ @angular/localize                    ^16.1.7  →    ^16.1.8
+ @angular/material                    ^15.2.2  →    ^16.1.7
+ @angular/platform-browser            ^15.1.0  →    ^16.1.8
+ @angular/platform-browser-dynamic    ^15.1.0  →    ^16.1.8
+ @angular/router                      ^15.1.0  →    ^16.1.8
+ @cds/core                             ^6.4.6  →     ^6.5.0
+ @clr/angular                         ^15.7.0  →    ^15.9.0
+ @clr/ui                              ^15.7.0  →    ^15.9.0
+ @fortawesome/fontawesome-free         ^6.3.0  →     ^6.4.2
+ @handsontable/angular                ^12.3.1  →    ^13.0.0
+ @heartexlabs/label-studio             ^1.4.0  →     ^1.8.0
+ @ng-bootstrap/ng-bootstrap           ^11.0.0  →    ^15.1.1
+ @ngrx/effects                        ^15.4.0  →    ^16.2.0
+ @ngrx/router-store                   ^15.4.0  →    ^16.2.0
+ @ngrx/store                          ^15.4.0  →    ^16.2.0
+ @ngrx/store-devtools                 ^15.4.0  →    ^16.2.0
+ @types/jasmine                        ^4.3.1  →     ^4.3.5
+ @types/lodash                      ^4.14.191  →  ^4.14.196
+ @types/node                         ^18.15.5  →    ^20.4.9
+ @types/react                        ^18.2.15  →   ^18.2.19
+ @types/uuid                           ^9.0.1  →     ^9.0.2
+ @typescript-eslint/eslint-plugin     ^5.55.0  →     ^6.3.0
+ @typescript-eslint/parser            ^5.55.0  →     ^6.3.0
+ bootstrap                             ^4.6.2  →     ^5.3.1
+ concurrently                          ^7.6.0  →     ^8.2.0
+ d3                                    ^7.8.4  →     ^7.8.5
+ eslint                               ^8.36.0  →    ^8.46.0
+ handsontable                         ^12.3.1  →    ^13.0.0
+ jasmine-core                          ^4.5.0  →     ^5.1.0
+ json-server                          ^0.17.2  →    ^0.17.3
+ karma                                 ^6.4.1  →     ^6.4.2
+ karma-chrome-launcher                 ^3.1.1  →     ^3.2.0
+ karma-coverage                        ^2.2.0  →     ^2.2.1
+ karma-jasmine-html-reporter           ^2.0.0  →     ^2.1.0
+ keycloak-angular                     ^13.0.0  →    ^14.0.0
+ keycloak-js                          ^21.1.1  →    ^22.0.1
+ moment-timezone                      ^0.5.41  →    ^0.5.43
+ postcss                              ^8.4.21  →    ^8.4.27
+ rxjs                                  ~7.8.0  →     ~7.8.1
+ tailwindcss                           ^3.2.7  →     ^3.3.3
+ tslib                                 ^2.3.0  →     ^2.6.1
+ typescript                            ~4.9.4  →     ~5.1.6
+ zone.js                              ~0.12.0  →    ~0.13.1
+
+Run ncu -u to upgrade package.json
+nessun cambiamento per ora
+
+ "node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+
+ 
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+BrowserAnimationsModule
+cdk permette
+npm run materias
