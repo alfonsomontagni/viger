@@ -170,3 +170,6 @@ $ npm install @fortawesome/free-solid-svg-icons
 $ npm install @fortawesome/angular-fontawesome
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
  ng s --project=flash01 --o   
+ ng s --project=flash01 --o
+
+ ng g application flash02 --style=css --routing=true 
