@@ -151,3 +151,22 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 BrowserAnimationsModule
 cdk permette
 npm run materias
+
+ng g module shared/material --flat --project=materiascss --dry-run
+(exports-->)
+npm run materias
+
+media query
+
+https://blog.angular.io/modern-css-in-angular-layouts-4a259dca9127
+
+ng g application flash01 --style=css --routing=true 
+add bulma
+Add Font awesome icons
+// nong add @fortawesome/angular-fontawesome
+$ npm install @fortawesome/fontawesome-svg-core
+$ npm install @fortawesome/free-solid-svg-icons
+# See Compatibility table below to choose a correct version
+$ npm install @fortawesome/angular-fontawesome
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+ ng s --project=flash01 --o   
