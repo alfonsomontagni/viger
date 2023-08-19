@@ -696,6 +696,8 @@
             ],
             "styles": [
               "node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+
               "projects/materiascss/src/styles.scss"
             ],
             "scripts": []
@@ -760,6 +762,98 @@
             ],
             "styles": [
               "projects/materiascss/src/styles.scss"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "flash01": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/flash01",
+      "sourceRoot": "projects/flash01/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/flash01",
+            "index": "projects/flash01/src/index.html",
+            "main": "projects/flash01/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/flash01/tsconfig.app.json",
+            "assets": [
+              "projects/flash01/src/favicon.ico",
+              "projects/flash01/src/assets"
+            ],
+            "styles": [
+              "node_modules/bulma/css/bulma.min.css",
+              "projects/flash01/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "flash01:build:production"
+            },
+            "development": {
+              "browserTarget": "flash01:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "flash01:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/flash01/tsconfig.spec.json",
+            "assets": [
+              "projects/flash01/src/favicon.ico",
+              "projects/flash01/src/assets"
+            ],
+            "styles": [
+              "projects/flash01/src/styles.css"
             ],
             "scripts": []
           }
