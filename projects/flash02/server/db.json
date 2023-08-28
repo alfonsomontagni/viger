@@ -1,0 +1,18 @@
+{
+    "hieroglyphs": [
+        {
+            "idH": "1",
+            "type": "monolitteral",
+            "translate": "trans_late",
+            "img": "test.jpg",
+            "gardinerList": ""
+        }
+    ],
+    "flashcards": [
+        {
+            "idF": "1",
+            "question": "idH-1",
+            "answer": "idH-1-trans_late"
+        }
+    ]
+}

@@ -871,6 +871,18 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "lodash",
+              "core-js",
+              "keycloak-js",
+              "pikaday",
+              "moment",
+              "file-saver",
+              "zone.js",
+              "rxjs",
+              "@handsontable/formulajs",
+              "numbro"
+           ],
             "outputPath": "dist/flash02",
             "index": "projects/flash02/src/index.html",
             "main": "projects/flash02/src/main.ts",
