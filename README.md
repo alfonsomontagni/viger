@@ -173,3 +173,35 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
  ng s --project=flash01 --o
 
  ng g application flash02 --style=css --routing=true 
+
+ng g s services/flash --project=flash02 --dry-run
+ ng generate module table-manager --route=table --module=app-routing --project=flash02 --dry-run (genera anche il comp)
+ng g c table-manager/handsontable --project=flash02 --dry-run
+npm install handsontable prob con la 12.3 version
+https://forum.handsontable.com/t/gh-1292-hottablemodule-does-not-appear-to-be-an-ngmodule-class/6911
+
+When you use a dependency that is packaged with CommonJS, it can result in larger slower applications
+
+Starting with version 10, Angular now warns you when your build pulls in one of these bundles. If you’ve started seeing these warnings for your dependencies, let your dependency know that you’d prefer an ECMAScript module (ESM) bundle.
+
+Here is an official documentation - Configuring CommonJS dependencies
+
+In your angular.json file look for the build object and add
+
+allowedCommonJsDependencies
+
+as shown below -
+
+"build": {
+  "builder": "@angular-devkit/build-angular:browser",
+  "options": {
+     "allowedCommonJsDependencies": [
+        "rxjs-compat",
+         ... few more commonjs dependencies ... 
+     ]
+     ...
+   }
+   ...
+},
+
+@import '~handsontable/dist/handsontable.full.css';

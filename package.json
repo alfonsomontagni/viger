@@ -53,7 +53,7 @@
     "d3": "^7.8.4",
     "file-saver": "^2.0.5",
     "font-awesome": "^4.7.0",
-    "handsontable": "^12.3.1",
+    "handsontable": "^12.4.0",
     "history": "^5.3.0",
     "json-server-auth": "^2.1.0",
     "keycloak-angular": "^13.0.0",
