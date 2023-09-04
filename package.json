@@ -8,7 +8,11 @@
     "watch": "ng build --watch --configuration development",
     "parolem": "ng serve --project=parolemagiche001 -o",
     "server-parolem-001": "json-server --watch projects/parolemagiche001/server/db.json",
-    "materias": "ng serve  --project=materiascss --port=5000 --o"
+    "materias": "ng serve  --project=materiascss --port=5000 --o",
+    "flash02": "ng serve  --project=flash02 --port=4200 --o",
+    "hieroserver": "json-server --watch projects/flash02/server/db.json --port 4000",
+    "hiero": "concurrently 'npm:run flash02' 'npm:run hieroserver'"
+
   },
   "private": true,
   "dependencies": {
