@@ -1,0 +1,17 @@
+<nav class="navbar">
+    <div class="navbar-content">
+      <div class="navbar-item">
+        <label class="checkbox-label">
+          <input type="checkbox" [checked]="tableIsLoaded" [disabled]="tableIsLoaded" (change)="navigateTable()" />
+          {{ tableIsLoaded ? 'Tabella Hiero' : 'Mostra Tabella Hiero' }}
+        </label>
+      </div>
+      <div class="navbar-item" >
+        <button class="button is-primary"   (click)="reloadTable()">Carica Tabella Hiero</button>
+      </div>
+      <div class="navbar-item">
+        <a href="/" class="button is-primary">Torna alla Home</a>
+      </div>
+    </div>
+  </nav>
+  

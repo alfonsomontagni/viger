@@ -1,6 +1,5 @@
-<div class="container mt-4">
-  <button class="button is-primary" (click)="linkTable()">Carica Tabella</button>
-
+<div class="container m-4">
+  <app-nav-bar [tableIsLoaded]="tableIsLoaded" (reloadTablehiero)="reloadTablehieroParent($event)"></app-nav-bar>
 </div>
 <router-outlet></router-outlet>
  

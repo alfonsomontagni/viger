@@ -1,0 +1,31 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+  }
+  
+  .navbar-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-item {
+    margin-right: 20px;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .checkbox-label input {
+    margin-right: 10px;
+  }
+  
+  .button.is-primary {
+    padding: 5px 10px;
+    font-size: 0.775rem; /* Regola questa dimensione secondo le tue esigenze */
+  }

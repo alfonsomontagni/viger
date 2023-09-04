@@ -20,8 +20,9 @@ export class HandsontableComponent implements OnInit {
   DefaultTotalWidth: number[];
   DefaultWidth: number[] = [100, 100, 100, 100, 100, 100, 100, 100]
   matEditIconFas = `<span title="edit"  class="mr-2" style="cursor: pointer"><i class="fas fa-edit"></i></span>`;
-
+//<i class="fa-solid fa-dinosaur"></i>
   matDeleteIconFas = `<span title="delete" class="mr-2" style="cursor: pointer"><i class="fas fa-trash"></i></span>`;
+  matVisibilityIconFas = `<span title="view" class="mr-2" style="cursor: pointer"><i class="fas fa-eye"></i></span>`;
 
   matEditIcon = `<span title="edit" class="material-icons action mr-2" style="cursor: pointer">mode_edit</span>`;
   matDeleteIcon = `<span title="delete" class="material-icons action mr-2" style="cursor: pointer">delete_outline</span>`;
@@ -158,8 +159,8 @@ export class HandsontableComponent implements OnInit {
     let z = 0;
     let requirementCondition = true;
 
-    td.innerHTML = this.matEditIconFas + this.matDeleteIconFas//matEditIcon + this.matVisibilityIcon + this.matDeleteIcon;
-    //z = 2
+    td.innerHTML =this.matVisibilityIconFas + this.matEditIconFas + this.matDeleteIconFas //matEditIcon + this.matVisibilityIcon + this.matDeleteIcon;
+    z = 2
 
     j = 1;
     td.classList.add("htCenter");
@@ -169,16 +170,23 @@ export class HandsontableComponent implements OnInit {
     if (requirementCondition) {
       td.children[i].addEventListener("mousedown", (event: Event) => {
         const hiero: any = instance.getSourceDataAtRow(instance.toPhysicalRow(row));
-        console.log("hiero", hiero)
+        console.log("view", hiero)
         event.stopPropagation();
 
       });
       td.children[j].addEventListener("mousedown", (event: Event) => {
         const hiero: any = instance.getSourceDataAtRow(instance.toPhysicalRow(row));
+        console.log("hiero", hiero)
+        event.stopPropagation();
+
+      });
+      td.children[z].addEventListener("mousedown", (event: Event) => {
+        const hiero: any = instance.getSourceDataAtRow(instance.toPhysicalRow(row));
         console.log("DELETE", hiero)
         event.stopPropagation();
 
       });
+    
     }
   }
 }

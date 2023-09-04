@@ -1,12 +1,17 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable, delay, of, tap } from 'rxjs';
+import { Hieroglyph } from '../models/flash-model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FlashService {
 
-  constructor() { }
+  private baseUrl = 'http://localhost:4000'; // L'indirizzo e la porta su cui gira json-server
+
+  constructor(private http: HttpClient) { } 
+  
   hiero = {
     "hieroglyphs": [
       {
@@ -25,8 +30,16 @@ export class FlashService {
       }
     ]
   }
-  getHieroglyphs(): Observable<any> {
-    return of(this.hiero);
+  getHieroglyphs(): Observable<Hieroglyph[] > {
+   // return of(this.hiero);
+   
+    return this.http.get<Hieroglyph[] >(`${this.baseUrl}/hieroglyphs`).pipe(
+      tap((r)=>{
+        //console.log("torna",r)
+      }),
+     // delay(2000)
+    );
+
   }
   
 }

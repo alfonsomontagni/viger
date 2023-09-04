@@ -205,3 +205,44 @@ as shown below -
 },
 
 @import '~handsontable/dist/handsontable.full.css';
+
+multicurs
+smart multi-cursor
+multi cursor
+ctrl alt down
+
+
+locale
+node -v
+nvm ls
+nvm
+
+npm install -g @angular/cli
+npm install -g npm@9.8.1
+C:\Program Files\nodejs\npm.ps1
+
+ng version
+Angular CLI: 15.1.6
+Node: 16.20.1
+Package Manager: npm 9.8.1
+OS: win32 x64
+
+Angular: 15.2.9
+... animations, cdk, common, compiler, compiler-cli, core, forms
+... material, platform-browser, platform-browser-dynamic, router
+
+Package                         Version
+---------------------------------------------------------
+@angular-devkit/architect       0.1502.9
+@angular-devkit/build-angular   15.2.9
+@angular-devkit/core            15.2.9
+@angular-devkit/schematics      15.1.6
+@angular/cli                    15.1.6
+@angular/localize               16.1.7
+@schematics/angular             15.1.6
+rxjs                            7.8.1
+typescript                      4.9.5
+
+JavaScript Booster
+
+ng g c core/nav-bar --project=flash02 --dry-run
