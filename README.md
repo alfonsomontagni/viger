@@ -246,3 +246,37 @@ typescript                      4.9.5
 JavaScript Booster
 
 ng g c core/nav-bar --project=flash02 --dry-run
+
+ng g application ahiero --style=css --routing=true 
+
+angular.json 
+  hiero  options  styles
+              "node_modules/bulma/css/bulma.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+
+style.css
+      /* You can add global styles to this file, and also import other style files */
+    @import '~handsontable/dist/handsontable.full.css';
+
+    .handsontable thead th{
+        text-align: center;
+    }
+
+    ng g application powerbi --style=css --routing=true 
+   Run `npm audit` for details.
+PS D:\github_v\viger> nvm current
+v16.20.1
+PS D:\github_v\viger> nvm list   
+
+    18.17.0
+  * 16.20.1 (Currently using 64-bit executable)
+    14.21.3
+    12.22.12
+PS D:\github_v\viger> nvm use 14.21.3
+Now using node v14.21.3 (64-bit)
+PS D:\github_v\viger> nvm list       
+
+    18.17.0
+    16.20.1
+  * 14.21.3 (Currently using 64-bit executable)
+    12.22.12
