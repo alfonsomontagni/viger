@@ -965,6 +965,463 @@
           }
         }
       }
+    },
+    "ahiero": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/ahiero",
+      "sourceRoot": "projects/ahiero/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/ahiero",
+            "index": "projects/ahiero/src/index.html",
+            "main": "projects/ahiero/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/ahiero/tsconfig.app.json",
+            "assets": [
+              "projects/ahiero/src/favicon.ico",
+              "projects/ahiero/src/assets"
+            ],
+            "styles": [
+              "node_modules/bulma/css/bulma.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "projects/ahiero/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "ahiero:build:production"
+            },
+            "development": {
+              "browserTarget": "ahiero:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "ahiero:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/ahiero/tsconfig.spec.json",
+            "assets": [
+              "projects/ahiero/src/favicon.ico",
+              "projects/ahiero/src/assets"
+            ],
+            "styles": [
+              "projects/ahiero/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "powerbi": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/powerbi",
+      "sourceRoot": "projects/powerbi/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/powerbi",
+            "index": "projects/powerbi/src/index.html",
+            "main": "projects/powerbi/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/powerbi/tsconfig.app.json",
+            "assets": [
+              "projects/powerbi/src/favicon.ico",
+              "projects/powerbi/src/assets"
+            ],
+            "styles": [
+              "projects/powerbi/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "powerbi:build:production"
+            },
+            "development": {
+              "browserTarget": "powerbi:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "powerbi:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/powerbi/tsconfig.spec.json",
+            "assets": [
+              "projects/powerbi/src/favicon.ico",
+              "projects/powerbi/src/assets"
+            ],
+            "styles": [
+              "projects/powerbi/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "powerbi2": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/powerbi2",
+      "sourceRoot": "projects/powerbi2/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/powerbi2",
+            "index": "projects/powerbi2/src/index.html",
+            "main": "projects/powerbi2/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/powerbi2/tsconfig.app.json",
+            "assets": [
+              "projects/powerbi2/src/favicon.ico",
+              "projects/powerbi2/src/assets"
+            ],
+            "styles": [
+              "projects/powerbi2/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "powerbi2:build:production"
+            },
+            "development": {
+              "browserTarget": "powerbi2:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "powerbi2:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/powerbi2/tsconfig.spec.json",
+            "assets": [
+              "projects/powerbi2/src/favicon.ico",
+              "projects/powerbi2/src/assets"
+            ],
+            "styles": [
+              "projects/powerbi2/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "powerbi3": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/powerbi3",
+      "sourceRoot": "projects/powerbi3/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/powerbi3",
+            "index": "projects/powerbi3/src/index.html",
+            "main": "projects/powerbi3/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/powerbi3/tsconfig.app.json",
+            "assets": [
+              "projects/powerbi3/src/favicon.ico",
+              "projects/powerbi3/src/assets"
+            ],
+            "styles": [
+              "projects/powerbi3/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "powerbi3:build:production"
+            },
+            "development": {
+              "browserTarget": "powerbi3:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "powerbi3:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/powerbi3/tsconfig.spec.json",
+            "assets": [
+              "projects/powerbi3/src/favicon.ico",
+              "projects/powerbi3/src/assets"
+            ],
+            "styles": [
+              "projects/powerbi3/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "powerbi4": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/powerbi4",
+      "sourceRoot": "projects/powerbi4/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/powerbi4",
+            "index": "projects/powerbi4/src/index.html",
+            "main": "projects/powerbi4/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/powerbi4/tsconfig.app.json",
+            "assets": [
+              "projects/powerbi4/src/favicon.ico",
+              "projects/powerbi4/src/assets"
+            ],
+            "styles": [
+              "projects/powerbi4/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "powerbi4:build:production"
+            },
+            "development": {
+              "browserTarget": "powerbi4:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "powerbi4:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/powerbi4/tsconfig.spec.json",
+            "assets": [
+              "projects/powerbi4/src/favicon.ico",
+              "projects/powerbi4/src/assets"
+            ],
+            "styles": [
+              "projects/powerbi4/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
     }
   }
 }
